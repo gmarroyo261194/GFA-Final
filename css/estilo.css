@@ -8,16 +8,15 @@
 }
 body{
     height: 100vh;
-    
 }
 
 .fondo__cortado{
     background-color: rgb(143, 199, 150);
     /* clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); */
-
 }
+
 .navbar{
-    background-color:rgb(143, 199, 150); ;
+    background-color:rgb(143, 199, 150);
 }
 .navbar-brand{
     /* font-family: 'Kaushan Script', cursive; */
@@ -34,7 +33,11 @@ body{
 /* .nav-link{
     font-family: 'Luckiest Guy', cursive;
 } */
-
-.icono{
-    width: 10%;
+.footer__posicion{
+    height: 100vh;
+    bottom: 0;
+    position: relative;
 }
+/* .icono{
+    width: 10%;
+} */
