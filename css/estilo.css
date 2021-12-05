@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    
+}
+
+.fondo__cortado{
+    background-color: rgb(143, 199, 150);
+    /* clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); */
+
+}
+.navbar{
+    background-color:rgb(143, 199, 150); ;
+}
+.navbar-brand{
+    /* font-family: 'Kaushan Script', cursive; */
+    font-size: 1rem;
+}
+.letra__chica a{
+    font-size: 12px;
+}
+
+#texto__presentacion{
+    line-height: 2.3rem;
+    text-align: justify;
+}
+/* .nav-link{
+    font-family: 'Luckiest Guy', cursive;
+} */
+
+.icono{
+    width: 10%;
+}
