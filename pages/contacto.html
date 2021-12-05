@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,15 +10,17 @@
   <link rel="stylesheet" href="/css/estilo.css">
   <title>Document</title>
 </head>
-<body>
+
+<body class="fondo__cortado">
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-        <header>
-          <nav class="navbar navbar-expand-lg navbar-dark bg-dark border shadow-lg">
+        <header class="mt-2">
+          <nav class="navbar navbar-expand-lg navbar-dark  border shadow-lg">
             <div class="container-fluid">
-              <a class="navbar-brand text-white fw-bold fs-3" href="#"><img src="/assets/iconos/favicon3.png" alt="">
-                GMA Freelance</a>
+              <a class="navbar-brand text-white fw-bold fs-3" href="#"><img src="assets/iconos/favicon3.png" alt="">
+                GFA
+                Freelancer's</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -25,11 +28,11 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="container-fluid navbar-nav d-flex justify-content-end">
-                  <a class="nav-link text-white" aria-current="page" href="/index.html">Home</a>
+                  <a class="nav-link text-white fw-bolder active" aria-current="page" href="../index.html">Home</a>
                   <a class="nav-link text-white" href="#">Tecnologias</a>
                   <a class="nav-link text-white" href="#">Proyectos</a>
                   <a class="nav-link text-white" href="#">Equipo</a>
-                  <a class="nav-link text-white fw-bold active" href="/pages/contacto.html">Contacto</a>
+                  <a class="nav-link text-white" href="../pages/contacto.html">Contacto</a>
                 </div>
               </div>
             </div>
@@ -38,6 +41,130 @@
       </div>
     </div>
   </div>
+  <section id="contacto">
+    <div class="container-lg shadow-lg">
+      <div class="text-center mt-4">
+        <h2>Estamos en Contacto</h2>
+        <p class="lead">Preguntas, dudas, quieres un presupuesto?, unirte al equipo?</p>
+      </div>
+
+      <div class="row justify-content-center my-3">
+        <div class="col-lg-6">
+          <form>
+            <label for="nombre" class="form-label">Nombre:</label>
+            <div class="mb-4 input-group">
+              <span class="input-group-text">
+                <i class="bi bi-person"></i>
+              </span>
+              <input type="text" class="form-control" id="nombre" placeholder="tu nombre">
+            </div>
+            <label for="email" class="form-label">Correo Electronico:</label>
+            <div class="mb-4 input-group">
+              <span class="input-group-text">
+                <i class="bi bi-at"></i>
+              </span>
+              <input type="email" class="form-control" id="email" placeholder="tu correo electronico">
+            </div>
+            <label for="tipo" class="form-label">Tipo de Consulta</label>
+            <div class="mb-4 input-group">
+              <span class="input-group-text">
+                <i class="bi bi-chat-right-dots"></i>
+              </span>
+              <select id="tipo" class="form-select">
+                <option value="presupuesto">Quiero un presupuesto</option>
+                <option value="unirte">Quiero unirme al equipo</option>
+                <option value="otras">Otras consultas</option>
+              </select>
+            </div>
+            <div class="form-floating mb-4 mt-2">
+              <textarea name="" id="consulta" class="form-control" cols="30" rows="50"></textarea>
+              <label for="consulta">Tu Consulta...</label>
+            </div>
+            <div class="mb-4 text-center">
+              <button type="submit" class="btn btn-primary">Envir Consulta</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container text-center text-md-left">
+      <div class="row text-center text-md-left">
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 fw-bold text-warning">GFA Freelancer's</h5>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo pariatur tempora quibusdam
+            recusandae similique? Maiores sint ab quam molestiae earum.</p>
+
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 fw-bold text-warning">Desarrollos</h5>
+          <p>
+            <a href="#" class="text-white">Aplicaciones de Escritorio</a>
+          </p>
+          <p>
+            <a href="#" class="text-white">Aplicaciones Web</a>
+          </p>
+          <p>
+            <a href="#" class="text-white">Gestion de Datos</a>
+          </p>
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-md-5 mt-3">
+          <h5 class="text-uppercase mb-4 fw-bold text-warning">Enlaces de Interes</h5>
+          <p>
+            <a href="#" class="text-white">Quieres ser parte del equipo?</a>
+          </p>
+        </div>
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 fw-bold text-warning">Contacto</h5>
+          <p>
+            <i class="bi bi-house"><span class="mx-3">Los Guindos 6997, Rodeo de la Cruz - Guaymallen - Mendoza,
+                Argentina</span></i>
+          </p>
+          <p>
+            <i class="bi bi-envelope"><span class="mx-3">gmarroyo@yahoo.com</span></i>
+          </p>
+          <p>
+            <i class="bi bi-phone mr-3"><span class="mx-3">+54 261 5923 700</span></i>
+          </p>
+        </div>
+      </div>
+      <hr class="mb-4">
+      <div class="row align-items-center">
+        <div class="col-md-7 col-lg-8">
+          <p>Copyright ©2021 Todos los derechos reservados por:
+            <a href="#">
+              <strong class="text-warning">GFA Freelancer's</strong>
+            </a>
+          </p>
+        </div>
+        <div class="col-md-5 col-lg-4">
+          <div class="text-center text-md-start">
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item">
+                <a href="#" class="btn-lg text-white"><i class="bi bi-facebook"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="btn-lg text-white"><i class="bi bi-twitter"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="btn-lg text-white"><i class="bi bi-whatsapp"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="btn-lg text-white"><i class="bi bi-linkedin"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="btn-lg text-white"><i class="bi bi-google"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="btn-lg text-white"><i class="bi bi-github"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
