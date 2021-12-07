@@ -31,6 +31,47 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.fondo__proyectos{
+  background-image: url("../assets/images/pexels-brett-sayles-3803517.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fondo__equipo {
+  background: linear-gradient(
+      rgba(255, 255, 255, -2),
+      rgba(255, 255, 255, -2)
+    ),
+    url("../assets/images/pexels-fauxels-3182773.jpg");
+  /* background-image: url("../assets/images/pexels-fauxels-3182773.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.miembro_equipo img {
+  width: 125px;
+  height: 125px;
+  border-radius: 100px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.card-effect {
+  box-shadow: 0 8px 22px rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  padding: 25px;
+  transition: all 0.35s ease;
+}
+
+.card-effect:hover {
+  box-shadow: none;
+  transform: translateY(5px);
+}
+
 .fondo__contacto {
   background: linear-gradient(
       rgba(255, 255, 255, 0.2),
