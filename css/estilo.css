@@ -9,7 +9,9 @@
 body {
   height: 100vh;
 }
-
+.navbar-brand {
+  font-size: 1rem;
+}
 .h1__especial {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: gray;
@@ -31,47 +33,19 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.fondo__proyectos{
+.fondo__proyectos {
   background-image: url("../assets/images/pexels-brett-sayles-3803517.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 .fondo__equipo {
-  background: linear-gradient(
-      rgba(255, 255, 255, -2),
-      rgba(255, 255, 255, -2)
-    ),
+  background: linear-gradient(rgba(255, 255, 255, -2), rgba(255, 255, 255, -2)),
     url("../assets/images/pexels-fauxels-3182773.jpg");
-  /* background-image: url("../assets/images/pexels-fauxels-3182773.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
 }
-
-.miembro_equipo img {
-  width: 125px;
-  height: 125px;
-  border-radius: 100px;
-}
-
-.social-icons {
-  display: flex;
-  justify-content: center;
-}
-
-.card-effect {
-  box-shadow: 0 8px 22px rgba(0,0,0,0.1);
-  background-color: #ffffff;
-  padding: 25px;
-  transition: all 0.35s ease;
-}
-
-.card-effect:hover {
-  box-shadow: none;
-  transform: translateY(5px);
-}
-
 .fondo__contacto {
   background: linear-gradient(
       rgba(255, 255, 255, 0.2),
@@ -82,28 +56,29 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.tarjeta__equipo {
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 25px;
+  transition: all 0.35s ease;
+}
+.tarjeta__equipo:hover {
+  box-shadow: none;
+  transform: translateY(5px);
+}
+.miembro_equipo img {
+  width: 125px;
+  height: 125px;
+  border-radius: 100px;
+}
+
 .animacion__responsive {
   width: 50%;
 }
 .p__textoTecnologia {
   font-size: 1.2rem;
   text-align: justify;
-}
-.navbar-brand {
-  /* font-family: 'Kaushan Script', cursive; */
-  font-size: 1rem;
-}
-.a_rotarV:hover {
-  animation: flipV 1s linear;
-}
-
-@keyframes flipV {
-  50% {
-    transform: rotateX(180deg);
-  }
-  to {
-    transform: rotateX(360deg);
-  }
 }
 
 .letra__chica a {
@@ -114,11 +89,7 @@ body {
   line-height: 2.3rem;
   text-align: justify;
 }
-.footer__posicion {
-  height: 100vh;
-  bottom: 0;
-  position: relative;
-}
+
 a {
   text-decoration: none;
 }
@@ -128,7 +99,6 @@ a {
   position: relative;
   overflow: hidden;
 }
-
 .proyecto .superposicion {
   position: absolute;
   top: 0;
@@ -142,16 +112,21 @@ a {
   transition: all 0.4s ease;
   opacity: 0;
 }
-
 .proyecto img {
-  transition: all 0.4s ease;   
+  transition: all 0.4s ease;
 }
-
-.proyecto:hover .superposicion{
+.proyecto:hover .superposicion {
   opacity: 1;
 }
-
 .proyecto:hover img {
   transform: scale(1.1);
 }
 /*FINAL SECCION PROYECTOS*/
+
+/*INICIO FOOTER*/
+.footer__posicion {
+  height: 100vh;
+  bottom: 0;
+  position: relative;
+}
+/*FINAL FOOTER*/
