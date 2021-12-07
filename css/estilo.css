@@ -81,3 +81,36 @@ body {
 a {
   text-decoration: none;
 }
+
+/* INCIO SECCION PROYECTOS*/
+.proyecto {
+  position: relative;
+  overflow: hidden;
+}
+
+.proyecto .superposicion {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(21, 20, 51, 0.8);
+  padding: 30px;
+  display: flex;
+  align-items: flex-end;
+  transition: all 0.4s ease;
+  opacity: 0;
+}
+
+.proyecto img {
+  transition: all 0.4s ease;   
+}
+
+.proyecto:hover .superposicion{
+  opacity: 1;
+}
+
+.proyecto:hover img {
+  transform: scale(1.1);
+}
+/*FINAL SECCION PROYECTOS*/
