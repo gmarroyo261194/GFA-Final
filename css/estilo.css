@@ -72,6 +72,17 @@ body {
   height: 125px;
   border-radius: 100px;
 }
+.miembro_equipo img:hover{
+transition: ease-in-out 1s;
+border-radius:50%;
+-webkit-border-radius:50%;
+box-shadow: 0px 0px 15px 15px #ec731e;
+-webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+transform: rotateY(180deg);
+filter: sepia(60%);
+transform: scale(1.8);
+}
+
 .texto_estudios{
   font-size: 14px;
 }
@@ -80,10 +91,7 @@ body {
 .animacion__responsive {
   width: 50%;
 }
-.p__textoTecnologia {
-  font-size: 1.2rem;
-  text-align: justify;
-}
+
 
 .letra__chica a {
   font-size: 12px;
@@ -96,6 +104,9 @@ body {
 
 a {
   text-decoration: none;
+}
+ul{
+  list-style: none;
 }
 
 /* INCIO SECCION PROYECTOS*/
@@ -189,24 +200,6 @@ a {
 }
 /*final efecto glow boton*/
 
-/*efecto botenes externos js*/
-.button {
-  text-align: center;
-  cursor: pointer;
-  padding: 1rem 3rem;
-  display: inline-block;
-  border-radius: 3px;
-  margin: 1rem;
-  text-decoration: none;
-  font-family: system-ui;
-  font-size: 16px;
-  text-transform: uppercase;
-  color: #fff !important;
-  background-image: linear-gradient(-45deg, #f761a1 0, #8c1bab 100%);
-  box-shadow: 0 3px 13px 0 rgba(14, 9, 73, 0.2),
-    0 11px 21px 0 rgba(255, 166, 220, 0.004);
-}
-
 /*INICIO FOOTER*/
 .footer__posicion {
   height: 100vh;
@@ -214,3 +207,12 @@ a {
   position: relative;
 }
 /*FINAL FOOTER*/
+
+/* @media screen and (max-width: 1199px) {
+    .portada__index{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    } 
+  } */
