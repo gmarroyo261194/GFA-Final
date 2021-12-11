@@ -216,3 +216,63 @@ ul{
       align-items: center;
     } 
   } */
+
+  .text_cut {
+    background-color: black;
+    color: white;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 2.8em;
+    text-align: center;
+    letter-spacing: -2px;
+    line-height: 75px;
+    mix-blend-mode: multiply;
+  }
+
+  .fondo__parallax1 {
+    /* The image used */
+    background-image: url("../assets/images/pro2.jpg");
+  
+    /* Set a specific height */
+    min-height: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .fondo__parallax2 {
+    /* The image used */
+    background-image: url("../assets/images/pro3.jpg");
+  
+    /* Set a specific height */
+    min-height: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .fondo__parallax3 {
+    /* The image used */
+    background-image: url("../assets/images/pro5.jpg");
+  
+    /* Set a specific height */
+    min-height: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.titulo__parallax{
+  padding-top: 15%;
+}
+.parrafo__parallax-tecnologia{
+  line-height: 2.5rem;
+  font-size: 1.2rem;
+  font-style: italic;
+}
