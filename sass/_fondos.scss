@@ -1,0 +1,70 @@
+.fondo__cortado {
+    background-image: url("../assets/images/pexels-chivozol-167259.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+  }
+  .fondo__tecnologia {
+    background-image: url("../assets/images/pexels-brett-sayles-3803517.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .fondo__proyectos {
+    background-image: url("../assets/images/pexels-brett-sayles-3803517.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .fondo__equipo {
+    background: linear-gradient(rgba(255, 255, 255, -2), rgba(255, 255, 255, -2)),
+      url("../assets/images/pexels-fauxels-3182773.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  .fondo__contacto {
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0.2)
+      ),
+      url("../assets/images/pexels-antonio-batinić-4164418.jpg");
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /*fondos para efecto parallax en pagina tecnologia*/
+  .fondo__parallax1 {
+    background-image: url("../assets/images/pro2.jpg");
+    min-height: 100%;
+  
+    /* crea el efecto de scroll parallax */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .fondo__parallax2 {
+    background-image: url("../assets/images/pro3.jpg");
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .fondo__parallax3 {
+    background-image: url("../assets/images/pro5.jpg");
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .titulo__parallax {
+    padding-top: 15%;
+  }
+  .parrafo__parallax-tecnologia {
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+    font-style: italic;
+  }

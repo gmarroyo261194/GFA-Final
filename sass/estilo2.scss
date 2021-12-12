@@ -1,0 +1,80 @@
+@import "fuentes.scss";
+@import "fondos.scss";
+@import "equipo.scss";
+@import "proyectos.scss";
+@import "tecnologia.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+}
+.navbar-brand {
+  font-size: 1rem;
+  img .icono_empresa:hover {
+    animation: rotation 2s infinite linear;
+  }
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.titulo_pagina {
+  font-family: $font-titulo;
+  font-size: $font-titulo-size-lg;
+}
+/*extra-small*/
+@media screen and (max-width: 320px) {
+  .titulo_pagina {
+    font-size: $font-titulo-size-xs;
+  }
+}
+/*small*/
+@media screen and (min-width: 576px) {
+  .titulo_pagina {
+    font-size: $font-titulo-size-sm;
+  }
+}
+/*medium*/
+@media screen and (min-width: 768px) {
+  .titulo_pagina {
+    font-size: $font-titulo-size-sm;    
+    }
+    .texto__presentacion p{
+      text-align: justify;
+  }
+}
+/*large*/
+@media screen and (min-width: 992px) {
+  .titulo_pagina {
+    font-size: $font-titulo-size-sm;
+  }
+}
+/*extra large*/
+@media screen and (min-width: 1200px) {
+  .titulo_pagina {
+    font-size: $font-titulo-size-xl;
+  }
+}
+/*extra extra large*/
+@media screen and (min-width: 1400px) {
+  .titulo_pagina {
+    font-size: $font-titulo-size-xl;
+  }
+  .subtitulo_pagina{
+    font-size: $font-subtitulo-size-xl;
+  }
+  .texto__presentacion{
+    font-size: $font-presentacion-size-xl;    
+  }
+}
+
+
+
+

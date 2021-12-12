@@ -73,26 +73,24 @@ body {
   height: 125px;
   border-radius: 100px;
 }
-.miembro_equipo img:hover{
-transition: ease-in-out 1s;
-border-radius:50%;
--webkit-border-radius:50%;
-box-shadow: 0px 0px 15px 15px #ec731e;
--webkit-box-shadow: 0px 0px 15px 15px #ec731e;
-transform: rotateY(180deg);
-filter: sepia(60%);
-transform: scale(1.8);
+.miembro_equipo img:hover {
+  transition: ease-in-out 1s;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  box-shadow: 0px 0px 15px 15px #ec731e;
+  -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+  transform: rotateY(180deg);
+  filter: sepia(60%);
+  transform: scale(1.8);
 }
 
-.texto_estudios{
+.texto_estudios {
   font-size: 14px;
 }
-
 
 .animacion__responsive {
   width: 50%;
 }
-
 
 .letra__chica a {
   font-size: 12px;
@@ -106,7 +104,7 @@ transform: scale(1.8);
 a {
   text-decoration: none;
 }
-ul{
+ul {
   list-style: none;
 }
 
@@ -154,11 +152,22 @@ ul{
 }
 
 .glow-on-hover:before {
-  content: '';
-  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
   position: absolute;
   top: -2px;
-  left:-2px;
+  left: -2px;
   background-size: 400%;
   z-index: -1;
   filter: blur(5px);
@@ -166,12 +175,12 @@ ul{
   height: calc(100% + 4px);
   animation: glowing 20s linear infinite;
   opacity: 0;
-  transition: opacity .3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
   border-radius: 10px;
 }
 
 .glow-on-hover:active {
-  color: #000
+  color: #000;
 }
 
 .glow-on-hover:active:after {
@@ -184,7 +193,7 @@ ul{
 
 .glow-on-hover:after {
   z-index: -1;
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -195,19 +204,19 @@ ul{
 }
 
 @keyframes glowing {
-  0% { background-position: 0 0; }
-  50% { background-position: 400% 0; }
-  100% { background-position: 0 0; }
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
 /*final efecto glow boton*/
 
-/*INICIO FOOTER*/
-.footer__posicion {
-  height: 100vh;
-  bottom: 0;
-  position: relative;
-}
-/*FINAL FOOTER*/
+
 
 /* @media screen and (max-width: 1199px) {
     .portada__index{
@@ -218,61 +227,61 @@ ul{
     } 
   } */
 
-  .text_cut {
-    background-color: black;
-    color: white;
-    font-weight: 900;
-    text-transform: uppercase;
-    font-size: 2.8em;
-    text-align: center;
-    letter-spacing: -2px;
-    line-height: 75px;
-    mix-blend-mode: multiply;
-  }
+.text_cut {
+  background-color: black;
+  color: white;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 2.8em;
+  text-align: center;
+  letter-spacing: -2px;
+  line-height: 75px;
+  mix-blend-mode: multiply;
+}
 
-  .fondo__parallax1 {
-    /* The image used */
-    background-image: url("../assets/images/pro2.jpg");
-  
-    /* Set a specific height */
-    min-height: 100%;
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .fondo__parallax2 {
-    /* The image used */
-    background-image: url("../assets/images/pro3.jpg");
-  
-    /* Set a specific height */
-    min-height: 100%;
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .fondo__parallax3 {
-    /* The image used */
-    background-image: url("../assets/images/pro5.jpg");
-  
-    /* Set a specific height */
-    min-height: 100%;
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-.titulo__parallax{
+.fondo__parallax1 {
+  /* The image used */
+  background-image: url("../assets/images/pro2.jpg");
+
+  /* Set a specific height */
+  min-height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fondo__parallax2 {
+  /* The image used */
+  background-image: url("../assets/images/pro3.jpg");
+
+  /* Set a specific height */
+  min-height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fondo__parallax3 {
+  /* The image used */
+  background-image: url("../assets/images/pro5.jpg");
+
+  /* Set a specific height */
+  min-height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.titulo__parallax {
   padding-top: 15%;
 }
-.parrafo__parallax-tecnologia{
+.parrafo__parallax-tecnologia {
   line-height: 2.5rem;
   font-size: 1.2rem;
   font-style: italic;
@@ -282,7 +291,7 @@ ul{
   animation: rotation 2s infinite linear;
 }
 
-.icono_empresa:hover{
+.icono_empresa:hover {
   animation: rotation 2s infinite linear;
 }
 
