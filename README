@@ -11,3 +11,7 @@ Cambios en Pagina Tecnologia
 
 Cambios en Gral
 1 - Efecto rotacion en icono empresa (navbar brand)
+
+Cambios en Pagina Index
+1 - Se reemplazaron los .gif animados por videos webm (herramienta de conversion utilizada ffmpeg)
+2 - Se agrego el meta description.
