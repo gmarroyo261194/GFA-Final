@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Kaushan+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
@@ -32,16 +31,15 @@
 }
 
 .fondo__contacto {
-  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../assets/images/pexels-antonio-batinić-4164418.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../assets/images/pexels-mikael-blomkvist-6476576.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 /*fondos para efecto parallax en pagina tecnologia*/
 .fondo__parallax1 {
-  background-image: url("../assets/images/pro2.jpg");
+  background-image: url("../assets/images/pro10.jpg");
   min-height: 100%;
-  /* crea el efecto de scroll parallax */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -73,7 +71,6 @@
 .parrafo__parallax-tecnologia {
   line-height: 2.5rem;
   font-size: 1.2rem;
-  font-style: italic;
 }
 
 .tarjeta__equipo {
@@ -228,10 +225,78 @@ ul {
   font-size: 4.5em;
 }
 
+.titulo__parallax {
+  text-transform: uppercase;
+}
+
 /*extra-small*/
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 575px) {
   .titulo_pagina {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: gray;
+    color: white;
+    font-family: "Arial Black";
+    text-transform: uppercase;
     font-size: 1.5em;
+    text-align: center;
+  }
+
+  .subtitulo_pagina {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .texto__presentacion p {
+    font-size: 0.9em;
+    text-align: justify;
+  }
+
+  .titulo_contenido_ppal h2 {
+    font-size: 1em;
+    font-weight: bold;
+  }
+  .titulo_contenido_ppal p {
+    font-size: 0.9em;
+    text-align: justify;
+  }
+
+  .tarjeta_index h5 {
+    font-size: 1em;
+    text-align: center;
+    font-weight: bold;
+  }
+  .tarjeta_index p {
+    font-size: 0.9em;
+    text-align: justify;
+    font-weight: lighter;
+  }
+  .tarjeta_index a {
+    font-size: 0.8em;
+  }
+
+  .titulo__parallax {
+    padding-top: 5%;
+    margin: 0;
+  }
+  .titulo__parallax h1 {
+    font-size: 1.2em;
+    color: #ffff !important;
+  }
+
+  .parrafo__parallax-tecnologia {
+    font-size: 0.9em;
+    text-align: justify;
+    color: white;
+    font-weight: bolder;
+    margin: 0;
+    opacity: 80%;
+  }
+
+  .iconos_tecnologia {
+    justify-content: space-around;
+  }
+  .iconos_tecnologia img {
+    width: 2.5em;
   }
 }
 /*small*/

@@ -29,10 +29,81 @@ ul {
   font-family: $font-titulo;
   font-size: $font-titulo-size-lg;
 }
+
+.titulo__parallax{
+  text-transform: uppercase;
+}
+
 /*extra-small*/
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 575px) {
   .titulo_pagina {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: gray;
+    color: white;
+    font-family: "Arial Black";
+    text-transform: uppercase;
     font-size: $font-titulo-size-xs;
+    text-align: center;
+    // letter-spacing: -2px;
+    // line-height: 75px;
+    // font-family: $font-titulo;
+    // font-size: $font-titulo-size-xs;
+    // text-align: center;
+  }
+  .subtitulo_pagina {
+    font-size: $font-subtitulo-size-xs;
+    text-align: center;
+  }
+  .texto__presentacion p {
+    font-size: $font-presentacion-size-xs;
+    text-align: justify;
+  }
+  .titulo_contenido_ppal {
+    h2 {
+      font-size: $font-subtitulo-size-xs;
+      font-weight: bold;
+    }
+    p {
+      font-size: $font-presentacion-size-xs;
+      text-align: justify;
+    }
+  }
+  .tarjeta_index {
+    h5 {
+      font-size: $font-subtitulo-size-xs;
+      text-align: center;
+      font-weight: bold;
+    }
+    p {
+      font-size: $font-presentacion-size-xs;
+      text-align: justify;
+      font-weight: lighter;
+    }
+    a {
+      font-size: $font-botones-size-xs;
+    }
+  }  
+  .titulo__parallax {
+    padding-top: 5%;
+    margin: 0;
+    h1 {
+      font-size: $font-titulo-parallax-size-xs;
+      color: #ffff !important;
+    }
+  }
+  .parrafo__parallax-tecnologia {
+    font-size: $font-presentacion-size-xs;
+    text-align: justify;
+    color: white;
+    font-weight: bolder;
+    margin: 0;
+    opacity: 80%;
+  }
+  .iconos_tecnologia {
+    justify-content: space-around;
+    img {
+      width: 2.5em;
+    }
   }
 }
 /*small*/
@@ -44,10 +115,10 @@ ul {
 /*medium*/
 @media screen and (min-width: 768px) {
   .titulo_pagina {
-    font-size: $font-titulo-size-sm;    
-    }
-    .texto__presentacion p{
-      text-align: justify;
+    font-size: $font-titulo-size-sm;
+  }
+  .texto__presentacion p {
+    text-align: justify;
   }
 }
 /*large*/
@@ -67,14 +138,10 @@ ul {
   .titulo_pagina {
     font-size: $font-titulo-size-xl;
   }
-  .subtitulo_pagina{
+  .subtitulo_pagina {
     font-size: $font-subtitulo-size-xl;
   }
-  .texto__presentacion{
-    font-size: $font-presentacion-size-xl;    
+  .texto__presentacion {
+    font-size: $font-presentacion-size-xl;
   }
 }
-
-
-
-

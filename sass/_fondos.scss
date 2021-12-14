@@ -27,7 +27,7 @@
         rgba(255, 255, 255, 0.2),
         rgba(255, 255, 255, 0.2)
       ),
-      url("../assets/images/pexels-antonio-batinić-4164418.jpg");
+      url("../assets/images/pexels-mikael-blomkvist-6476576.jpg");
   
     background-repeat: no-repeat;
     background-size: cover;
@@ -35,10 +35,8 @@
 
   /*fondos para efecto parallax en pagina tecnologia*/
   .fondo__parallax1 {
-    background-image: url("../assets/images/pro2.jpg");
+    background-image: url("../assets/images/pro10.jpg");
     min-height: 100%;
-  
-    /* crea el efecto de scroll parallax */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -66,5 +64,4 @@
   .parrafo__parallax-tecnologia {
     line-height: 2.5rem;
     font-size: 1.2rem;
-    font-style: italic;
   }
