@@ -268,10 +268,14 @@ img .rotar:hover {
   box-sizing: border-box;
 }
 
+body {
+  height: 100vh;
+}
+
 .navbar-brand {
   font-size: 1rem;
 }
-.navbar-brand img .icono_empresa:hover {
+.navbar-brand .icono_empresa:hover {
   animation: rotation 2s infinite linear;
 }
 .navbar-brand .icono_empresa {

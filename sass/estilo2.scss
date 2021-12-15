@@ -9,13 +9,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-// body {
-//   height: 100vh;
-// }
+
+body {
+  height: 100vh;
+}
 
 .navbar-brand {
   font-size: 1rem;
-  img .icono_empresa:hover {
+  .icono_empresa:hover {
     animation: rotation 2s infinite linear;
   }
   .icono_empresa {
