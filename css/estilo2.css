@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap");
 /*font-family: 'Bakbak One', cursive;*/
 .fondo__cortado {
-  background-image: url("../assets/images/pexels-chivozol-167259.jpg");
+  background-image: url("../assets/images/artur-shamsutdinov-7MJpHQdGXGA-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.8;
@@ -211,6 +211,9 @@ body {
 .navbar-brand img .icono_empresa:hover {
   animation: rotation 2s infinite linear;
 }
+.navbar-brand .icono_empresa {
+  width: 12%;
+}
 
 a {
   text-decoration: none;
@@ -222,7 +225,11 @@ ul {
 
 .titulo_pagina {
   font-family: "Bakbak One, cursive";
-  font-size: 4.5em;
+  font-size: 2.8em;
+}
+
+.cuerpo__tarjeta--index {
+  text-align: justify;
 }
 
 .titulo__parallax {
@@ -244,6 +251,7 @@ ul {
   .subtitulo_pagina {
     font-size: 1em;
     text-align: center;
+    font-weight: bolder;
   }
 
   .texto__presentacion p {
@@ -257,7 +265,7 @@ ul {
   }
   .titulo_contenido_ppal p {
     font-size: 0.9em;
-    text-align: justify;
+    text-align: center;
   }
 
   .tarjeta_index h5 {
@@ -302,13 +310,27 @@ ul {
 /*small*/
 @media screen and (min-width: 576px) {
   .titulo_pagina {
-    font-size: 2.5em;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: gray;
+    color: white;
+    font-family: "Arial Black";
+    text-transform: uppercase;
+    font-size: 2.2em;
+  }
+
+  .texto__presentacion {
+    font-size: 1.1em;
+    text-align: justify !important;
   }
 }
 /*medium*/
 @media screen and (min-width: 768px) {
   .titulo_pagina {
     font-size: 2.5em;
+  }
+
+  .subtitulo_pagina {
+    font-weight: bold;
   }
 
   .texto__presentacion p {
@@ -318,27 +340,78 @@ ul {
 /*large*/
 @media screen and (min-width: 992px) {
   .titulo_pagina {
-    font-size: 2.5em;
+    font-size: 2.8em;
+  }
+
+  .subtitulo_pagina {
+    background: #000;
+    font-weight: bold;
+    text-align: center !important;
+  }
+
+  h5 {
+    font-size: 1em;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 0.9em;
+    text-align: justify !important;
+    font-weight: lighter;
   }
 }
 /*extra large*/
 @media screen and (min-width: 1200px) {
   .titulo_pagina {
-    font-size: 5em;
+    font-size: 3.1em;
+    text-align: center;
+  }
+
+  .subtitulo_pagina {
+    text-align: center;
+  }
+
+  .tarjeta_index h5 {
+    font-size: 1.4em;
+    text-align: center;
+    font-weight: bold;
+  }
+  .tarjeta_index p {
+    font-size: 1.1em;
+    text-align: justify;
+    font-weight: lighter;
+  }
+  .tarjeta_index a {
+    font-size: 0.8em;
   }
 }
 /*extra extra large*/
 @media screen and (min-width: 1400px) {
   .titulo_pagina {
-    font-size: 5em;
+    font-size: 3.1em;
   }
 
   .subtitulo_pagina {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 
   .texto__presentacion {
-    font-size: 1.2em;
+    font-size: 1.7em;
+  }
+
+  .tarjeta_index h5 {
+    font-size: 1.4em;
+    text-align: center;
+    font-weight: bold;
+  }
+  .tarjeta_index p {
+    font-size: 1.1em;
+    text-align: justify;
+    font-weight: lighter;
+  }
+  .tarjeta_index a {
+    font-size: 0.8em;
   }
 }
 

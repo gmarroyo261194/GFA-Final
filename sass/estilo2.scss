@@ -18,6 +18,9 @@ body {
   img .icono_empresa:hover {
     animation: rotation 2s infinite linear;
   }
+  .icono_empresa{
+    width: 12%;
+  }
 }
 a {
   text-decoration: none;
@@ -26,8 +29,12 @@ ul {
   list-style: none;
 }
 .titulo_pagina {
-  font-family: $font-titulo;
-  font-size: $font-titulo-size-lg;
+  font-family: $ft-titulo;
+  font-size: $fs-titulo-lg;
+}
+
+.cuerpo__tarjeta--index{
+  text-align: justify;
 }
 
 .titulo__parallax{
@@ -42,57 +49,54 @@ ul {
     color: white;
     font-family: "Arial Black";
     text-transform: uppercase;
-    font-size: $font-titulo-size-xs;
+    font-size: $fs-titulo-xs;
     text-align: center;
-    // letter-spacing: -2px;
-    // line-height: 75px;
-    // font-family: $font-titulo;
-    // font-size: $font-titulo-size-xs;
-    // text-align: center;
   }
   .subtitulo_pagina {
-    font-size: $font-subtitulo-size-xs;
+    font-size: $fs-subtitulo-xs;
     text-align: center;
+    font-weight: bolder;
+    
   }
   .texto__presentacion p {
-    font-size: $font-presentacion-size-xs;
+    font-size: $fs-presentacion-xs;
     text-align: justify;
   }
   .titulo_contenido_ppal {
     h2 {
-      font-size: $font-subtitulo-size-xs;
+      font-size: $fs-subtitulo-xs;
       font-weight: bold;
     }
     p {
-      font-size: $font-presentacion-size-xs;
-      text-align: justify;
+      font-size: $fs-presentacion-xs;
+      text-align: center;
     }
   }
   .tarjeta_index {
     h5 {
-      font-size: $font-subtitulo-size-xs;
+      font-size: $fs-subtitulo-xs;
       text-align: center;
       font-weight: bold;
     }
     p {
-      font-size: $font-presentacion-size-xs;
+      font-size: $fs-presentacion-xs;
       text-align: justify;
       font-weight: lighter;
     }
     a {
-      font-size: $font-botones-size-xs;
+      font-size: $fs-botones-xs;
     }
   }  
   .titulo__parallax {
     padding-top: 5%;
     margin: 0;
     h1 {
-      font-size: $font-titulo-parallax-size-xs;
+      font-size: $fs-Tparallax-xs;
       color: #ffff !important;
     }
   }
   .parrafo__parallax-tecnologia {
-    font-size: $font-presentacion-size-xs;
+    font-size: $fs-presentacion-xs;
     text-align: justify;
     color: white;
     font-weight: bolder;
@@ -109,39 +113,107 @@ ul {
 /*small*/
 @media screen and (min-width: 576px) {
   .titulo_pagina {
-    font-size: $font-titulo-size-sm;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: gray;
+    color: white;
+    font-family: "Arial Black";
+    text-transform: uppercase;
+    font-size: $fs-titulo-sm;
+  }
+  .texto__presentacion{
+    font-size: $fs-presentacion-md;
+    text-align: justify !important;
   }
 }
 /*medium*/
 @media screen and (min-width: 768px) {
   .titulo_pagina {
-    font-size: $font-titulo-size-sm;
+    font-size: $fs-titulo-md;
   }
-  .texto__presentacion p {
+  .subtitulo_pagina{
+    font-weight: bold;
+  }
+  .texto__presentacion p {    
     text-align: justify;
   }
 }
 /*large*/
 @media screen and (min-width: 992px) {
   .titulo_pagina {
-    font-size: $font-titulo-size-sm;
+    font-size: $fs-titulo-lg;    
   }
+  .subtitulo_pagina{
+    background: #000;
+    font-weight: bold;
+    text-align: center !important;
+  }
+  h5 {
+    font-size: $fs-subtitulo-xs;
+    text-align: center;
+    font-weight: bold;
+  }
+  p {
+    font-size: $fs-presentacion-xs;
+    text-align: justify !important ;
+    font-weight: lighter;
+  }
+// .navbar-nav{
+//   a{    
+//     background-color: black;
+//     box-shadow: 10px 5px 5px black;
+
+//   }
+// }
 }
 /*extra large*/
 @media screen and (min-width: 1200px) {
   .titulo_pagina {
-    font-size: $font-titulo-size-xl;
+    font-size: $fs-titulo-xl;
+    text-align: center;
   }
+  .subtitulo_pagina{
+    text-align: center;
+  }
+  .tarjeta_index {
+    h5 {
+      font-size: $fs-subtitulo-md;
+      text-align: center;
+      font-weight: bold;
+    }
+    p {
+      font-size: $fs-presentacion-md;
+      text-align: justify;
+      font-weight: lighter;
+    }
+    a {
+      font-size: $fs-botones-xs;
+    }
+  }  
 }
 /*extra extra large*/
 @media screen and (min-width: 1400px) {
   .titulo_pagina {
-    font-size: $font-titulo-size-xl;
+    font-size: $fs-titulo-xl;
   }
   .subtitulo_pagina {
-    font-size: $font-subtitulo-size-xl;
+    font-size: $fs-subtitulo-xl;
   }
   .texto__presentacion {
-    font-size: $font-presentacion-size-xl;
+    font-size: $fs-presentacion-xl;    
   }
+  .tarjeta_index {
+    h5 {
+      font-size: $fs-subtitulo-md;
+      text-align: center;
+      font-weight: bold;
+    }
+    p {
+      font-size: $fs-presentacion-md;
+      text-align: justify;
+      font-weight: lighter;
+    }
+    a {
+      font-size: $fs-botones-xs;
+    }
+  }  
 }
