@@ -2,3 +2,28 @@
 img .rotar:hover {
     animation: rotation 2s infinite linear;
   }
+  .titulo__parallax {
+    padding-top: 15%;
+  }
+  .parrafo__parallax-tecnologia {
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+    font-style: italic;
+  }
+.fondo_tecno{
+  background-color: #D9E2DE;
+}
+  .item_ppal{
+    font-size: $fs-itemPpal-xl;
+    line-height: 1.75rem;
+    margin-bottom: 0.25rem;
+    font-weight: 900;
+  }
+.item_detalle{
+  margin-bottom: 1rem;    
+    line-height: 2.7em;
+    font-size: $fs-detalle-xl;  
+    font-weight: 500;
+    text-align: justify;
+}
+  

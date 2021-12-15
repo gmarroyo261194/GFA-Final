@@ -1,40 +1,27 @@
 .proyecto {
-    position: relative;
-    overflow: hidden;
-
-    .superposicion {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(21, 20, 51, 0.8);
-        padding: 30px;
-        display: flex;
-        align-items: flex-end;
-        transition: all 0.4s ease;
-        opacity: 0;
-      }
-      img {
-        transition: all 0.4s ease;
-      }
-      .proyecto:hover .superposicion {
-        opacity: 1;
-      }
-      .proyecto:hover img {
-        transform: scale(1.1);
-      }
+  position: relative;
+  overflow: hidden;
+  .superposicion{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 20, 51, 0.8);
+    padding: 30px;
+    display: flex;
+    align-items: flex-end;
+    transition: all 0.4s ease;
+    opacity: 0;  
   }
-  @keyframes glowing {
-    0% {
-      background-position: 0 0;
-    }
-    50% {
-      background-position: 400% 0;
-    }
-    100% {
-      background-position: 0 0;
-    }
+  img{
+    transition: all 0.4s ease;  
   }
-  /*final efecto glow boton*/
   
+  &:hover .superposicion{
+    opacity: 1;
+  }
+  &:hover img{
+    transform: scale(1.1);
+  }
+}

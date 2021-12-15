@@ -1,25 +1,24 @@
 @import "fuentes.scss";
 @import "fondos.scss";
-@import "equipo.scss";
 @import "proyectos.scss";
 @import "tecnologia.scss";
+@import "equipo.scss";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  height: 100vh;
-  width: 100vw;
-}
+// body {
+//   height: 100vh;
+// }
 
 .navbar-brand {
   font-size: 1rem;
   img .icono_empresa:hover {
     animation: rotation 2s infinite linear;
   }
-  .icono_empresa{
+  .icono_empresa {
     width: 12%;
   }
 }
@@ -34,11 +33,11 @@ ul {
   font-size: $fs-titulo-lg;
 }
 
-.cuerpo__tarjeta--index{
+.cuerpo__tarjeta--index {
   text-align: justify;
 }
 
-.titulo__parallax{
+.titulo__parallax {
   text-transform: uppercase;
 }
 
@@ -57,7 +56,6 @@ ul {
     font-size: $fs-subtitulo-xs;
     text-align: center;
     font-weight: bolder;
-    
   }
   .texto__presentacion p {
     font-size: $fs-presentacion-xs;
@@ -87,7 +85,7 @@ ul {
     a {
       font-size: $fs-botones-xs;
     }
-  }  
+  }
   .titulo__parallax {
     padding-top: 5%;
     margin: 0;
@@ -110,6 +108,19 @@ ul {
       width: 2.5em;
     }
   }
+  .item_ppal{
+    font-size: $fs-itemPpal-sm;
+    line-height: 1.75rem;
+    margin-bottom: 0.25rem;
+    font-weight: 900;
+  }
+.item_detalle{
+  margin-bottom: 1rem;    
+    line-height: 2.7em;
+    font-size: $fs-detalle-sm;  
+    font-weight: 500;
+    text-align: justify;
+}
 }
 /*small*/
 @media screen and (min-width: 576px) {
@@ -121,7 +132,7 @@ ul {
     text-transform: uppercase;
     font-size: $fs-titulo-sm;
   }
-  .texto__presentacion{
+  .texto__presentacion {
     font-size: $fs-presentacion-md;
     text-align: justify !important;
   }
@@ -131,19 +142,19 @@ ul {
   .titulo_pagina {
     font-size: $fs-titulo-md;
   }
-  .subtitulo_pagina{
+  .subtitulo_pagina {
     font-weight: bold;
   }
-  .texto__presentacion p {    
+  .texto__presentacion p {
     text-align: justify;
   }
 }
 /*large*/
 @media screen and (min-width: 992px) {
   .titulo_pagina {
-    font-size: $fs-titulo-lg;    
+    font-size: $fs-titulo-lg;
   }
-  .subtitulo_pagina{
+  .subtitulo_pagina {
     background: #000;
     font-weight: bold;
     text-align: center !important;
@@ -158,63 +169,56 @@ ul {
     text-align: justify !important ;
     font-weight: lighter;
   }
-// .navbar-nav{
-//   a{    
-//     background-color: black;
-//     box-shadow: 10px 5px 5px black;
-
-//   }
-// }
-}
-/*extra large*/
-@media screen and (min-width: 1200px) {
-  .titulo_pagina {
-    font-size: $fs-titulo-xl;
-    text-align: center;
-  }
-  .subtitulo_pagina{
-    text-align: center;
-  }
-  .tarjeta_index {
-    h5 {
-      font-size: $fs-subtitulo-md;
+  /*extra large*/
+  @media screen and (min-width: 1200px) {
+    .titulo_pagina {
+      font-size: $fs-titulo-xl;
       text-align: center;
-      font-weight: bold;
     }
-    p {
-      font-size: $fs-presentacion-md;
-      text-align: justify;
-      font-weight: lighter;
-    }
-    a {
-      font-size: $fs-botones-xs;
-    }
-  }  
-}
-/*extra extra large*/
-@media screen and (min-width: 1400px) {
-  .titulo_pagina {
-    font-size: $fs-titulo-xl;
-  }
-  .subtitulo_pagina {
-    font-size: $fs-subtitulo-xl;
-  }
-  .texto__presentacion {
-    font-size: $fs-presentacion-xl;    
-  }
-  .tarjeta_index {
-    h5 {
-      font-size: $fs-subtitulo-md;
+    .subtitulo_pagina {
       text-align: center;
-      font-weight: bold;
     }
-    p {
-      font-size: $fs-presentacion-md;
-      text-align: justify;
-      font-weight: lighter;
+    .tarjeta_index {
+      h5 {
+        font-size: $fs-subtitulo-md;
+        text-align: center;
+        font-weight: bold;
+      }
+      p {
+        font-size: $fs-presentacion-md;
+        text-align: justify;
+        font-weight: lighter;
+      }
+      a {
+        font-size: $fs-botones-xs;
+      }
     }
-    a {
-      font-size: $fs-botones-xs;
+  }
+  /*extra extra large*/
+  @media screen and (min-width: 1400px) {
+    .titulo_pagina {
+      font-size: $fs-titulo-xl;
     }
-  }  
+    .subtitulo_pagina {
+      font-size: $fs-subtitulo-xl;
+    }
+    .texto__presentacion {
+      font-size: $fs-presentacion-xl;
+    }
+    .tarjeta_index {
+      h5 {
+        font-size: $fs-subtitulo-md;
+        text-align: center;
+        font-weight: bold;
+      }
+      p {
+        font-size: $fs-presentacion-md;
+        text-align: justify;
+        font-weight: lighter;
+      }
+      a {
+        font-size: $fs-botones-xs;
+      }
+    }
+  }
 }
