@@ -144,7 +144,8 @@ img .rotar:hover {
 .texto__neon h2 {
   position: relative;
   color: #252839;
-  font-size: 4vw;
+  letter-spacing: 0.1em;
+  font-size: 3vw;
   font-weight: 800;
   -webkit-text-stroke: 0.2vw #383d52;
   white-space: nowrap;

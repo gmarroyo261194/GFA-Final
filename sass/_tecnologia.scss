@@ -26,6 +26,7 @@ img .rotar:hover {
     font-weight: 500;
     text-align: justify;
 }
+
 .texto__neon{ 
   background: #252839 ;
   display: flex;
@@ -36,7 +37,8 @@ img .rotar:hover {
   h2{
     position: relative;
     color: #252839;
-    font-size: 4vw;
+    letter-spacing: .1em;
+    font-size: 3vw;
     font-weight: 800;
     -webkit-text-stroke: 0.2vw #383d52;    
     white-space : nowrap;
