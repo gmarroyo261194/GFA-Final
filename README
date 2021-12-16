@@ -15,3 +15,12 @@ Cambios en Gral
 Cambios en Pagina Index
 1 - Se reemplazaron los .gif animados por videos webm (herramienta de conversion utilizada ffmpeg)
 2 - Se agrego el meta description.
+
+Cambios Desafio SASS I
+1 - Se paso todo el codigo css a sass.
+2 - Se arreglo el problema del scroll horizontal (problema m-4).
+3 - Se cambio el contenido de la pagina tecnologias para convertirse en acerca de nosotros.
+4 - Se agrego efecto sobre texto en pagina de nosotros.
+5 - Se agrego un borde glow sobre el formulario de contacto.
+6 - Se arreglo el problema de contraste entre imagenes y texto en las secciones hero.
+7 - Se agregaron los @media para pagina index y equipo.
