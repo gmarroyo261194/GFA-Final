@@ -1,0 +1,69 @@
+/*wfewcto de roatcion de los iconos de tecnologia + icono navbar-brand*/
+img .rotar:hover {
+    animation: rotation 2s infinite linear;
+  }
+  .titulo__parallax {
+    padding-top: 15%;
+  }
+  .parrafo__parallax-tecnologia {
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+    font-style: italic;
+  }
+.fondo_tecno{
+  background-color: #D9E2DE;
+}
+  .item_ppal{
+    font-size: $fs-itemPpal-xl;
+    line-height: 1.75rem;
+    margin-bottom: 0.25rem;
+    font-weight: 900;
+  }
+.item_detalle{
+  margin-bottom: 1rem;    
+    line-height: 2.7em;
+    font-size: $fs-detalle-xl;  
+    font-weight: 500;
+    text-align: justify;
+}
+
+.texto__neon{ 
+  background: #252839 ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+ 
+  h2{
+    position: relative;
+    color: #252839;
+    letter-spacing: .1em;
+    font-size: 3vw;
+    font-weight: 800;
+    -webkit-text-stroke: 0.2vw #383d52;    
+    white-space : nowrap;
+    
+    &::before{
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      color: #01fe87;
+      -webkit-text-stroke: 0vw #383d52;
+      border-right: 2px solid #01fe87;
+      overflow: hidden;
+      animation: neon 10s linear infinite;
+    }
+  } 
+}
+
+@keyframes neon {
+  0%, 10%, 100%{
+    width: 0;
+  }
+  70%,90%{
+    width: 100%;
+  }
+}
