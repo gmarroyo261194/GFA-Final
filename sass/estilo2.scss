@@ -42,16 +42,51 @@ ul {
   text-transform: uppercase;
 }
 
-.bordes__glow{
+.bordes__glow {
   border: 0.2rem solid #fff;
   border-radius: 2rem;
   padding: 0.4em;
-  box-shadow: 0 0 .2rem #fff,
-              0 0 .2rem #fff,
-              0 0 2rem #103af5a4,
-              0 0 0.8rem #103af5a4,
-              0 0 2.8rem #103af5a4,
-              inset 0 0 1.3rem #103af5a4,
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #103af5a4,
+    0 0 0.8rem #103af5a4, 0 0 2.8rem #103af5a4, inset 0 0 1.3rem #103af5a4;
+}
+
+.icon {
+  cursor: pointer;
+  border-radius: 15px;
+  transition: all 0.4s;
+}
+
+.icon:nth-child(1):hover {
+  box-shadow: 0px 0px 10px #9ac4f8;
+}
+.icon:nth-child(2):hover {
+  box-shadow: 0px 0px 10px #04f06a;
+}
+.icon:nth-child(3):hover {
+  box-shadow: 0px 0px 10px #096ce6;
+}
+.icon:nth-child(4):hover {
+  box-shadow: 0px 0px 10px #f5f10c;
+}
+
+.glow_icon_what {
+  color: #04f06a;
+  filter: drop-shadow(0px 0px 10px #04f06a);
+}
+
+.glow_icon_twit {
+  color: #9ac4f8;
+  filter: drop-shadow(0px 0px 10px #9ac4f8);
+}
+
+.glow_icon_link {
+  color: #096ce6;
+  filter: drop-shadow(0px 0px 10px #096ce6);
+}
+
+.glow_icon_git {
+  color: #f5f10c;
+  filter: drop-shadow(0px 0px 10px #f5f10c);
 }
 
 /*extra-small*/
@@ -121,19 +156,19 @@ ul {
       width: 2.5em;
     }
   }
-  .item_ppal{
+  .item_ppal {
     font-size: $fs-itemPpal-sm;
     line-height: 1.75rem;
     margin-bottom: 0.25rem;
     font-weight: 900;
   }
-.item_detalle{
-  margin-bottom: 1rem;    
+  .item_detalle {
+    margin-bottom: 1rem;
     line-height: 2.7em;
-    font-size: $fs-detalle-sm;  
+    font-size: $fs-detalle-sm;
     font-weight: 500;
     text-align: justify;
-}
+  }
 }
 /*small*/
 @media screen and (min-width: 576px) {
