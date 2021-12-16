@@ -1,23 +1,22 @@
 .fondo__cortado {
-    background-image: url("../assets/images/artur-shamsutdinov-7MJpHQdGXGA-unsplash.jpg");
+    background-image: url("../assets/images/fondo_index.webp");
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.8;
   }
   .fondo__tecnologia {
-    // background-image: url("../assets/images/pexels-brett-sayles-3803517.jpg");
     background-image: url("../assets/images/fondo_nosotros.webp");
     background-repeat: no-repeat;
     background-size: cover;
   }
   .fondo__proyectos {
-    background-image: url("../assets/images/pexels-brett-sayles-3803517.jpg");
+    background-image: url("../assets/images/fondo_nosotros.webp");
     background-repeat: no-repeat;
     background-size: cover;
   }
   .fondo__equipo {
     background: linear-gradient(rgba(255, 255, 255, -2), rgba(255, 255, 255, -2)),
-      url("../assets/images/pexels-fauxels-3182773.jpg");
+      url("../assets/images/fondo_equipo.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -28,41 +27,10 @@
         rgba(255, 255, 255, 0.2),
         rgba(255, 255, 255, 0.2)
       ),
-      url("../assets/images/pexels-mikael-blomkvist-6476576.jpg");
+      url("../assets/images/fondo_contacto.webp");
   
     background-repeat: no-repeat;
     background-size: cover;
   }
 
-  /*fondos para efecto parallax en pagina tecnologia*/
-  .fondo__parallax1 {
-    background-image: url("../assets/images/mohammad-rahmani-8qEB0fTe9Vw-unsplash.jpg");
-    min-height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .fondo__parallax2 {
-    background-image: url("../assets/images/pro3.jpg");
-    min-height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .fondo__parallax3 {
-    background-image: url("../assets/images/pro5.jpg");
-    min-height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .titulo__parallax {
-    padding-top: 15%;
-  }
-  .parrafo__parallax-tecnologia {
-    line-height: 2.5rem;
-    font-size: 1.2rem;
-  }
+  
