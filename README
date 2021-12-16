@@ -25,3 +25,4 @@ Cambios Desafio SASS I
 6 - Se arreglo el problema de contraste entre imagenes y texto en las secciones hero.
 7 - Se agregaron los @media para pagina index y equipo.
 8 - Se agrego efecto glow y box-shadow a los iconos de redes sociales en el footer.
+9 - Se elimino el archivo de estilos css original.
