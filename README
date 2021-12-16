@@ -21,6 +21,7 @@ Cambios Desafio SASS I
 2 - Se arreglo el problema del scroll horizontal (problema m-4).
 3 - Se cambio el contenido de la pagina tecnologias para convertirse en acerca de nosotros.
 4 - Se agrego efecto sobre texto en pagina de nosotros.
-5 - Se agrego un borde glow sobre el formulario de contacto.
+5 - Se agrego un borde glow sobre el formulario de contacto (a sacar en el futuro por feo...era una prueba).
 6 - Se arreglo el problema de contraste entre imagenes y texto en las secciones hero.
 7 - Se agregaron los @media para pagina index y equipo.
+8 - Se agrego efecto glow y box-shadow a los iconos de redes sociales en el footer.
