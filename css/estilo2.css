@@ -341,6 +341,13 @@ ul {
   text-transform: uppercase;
 }
 
+.bordes__glow {
+  border: 0.2rem solid #fff;
+  border-radius: 2rem;
+  padding: 0.4em;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #103af5a4, 0 0 0.8rem #103af5a4, 0 0 2.8rem #103af5a4, inset 0 0 1.3rem #103af5a4;
+}
+
 /*extra-small*/
 @media screen and (max-width: 575px) {
   .titulo_pagina {
