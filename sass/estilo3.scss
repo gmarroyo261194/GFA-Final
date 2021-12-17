@@ -1,0 +1,194 @@
+@import "fuentes.scss";
+@import "fondos.scss";
+@import "proyectos.scss";
+@import "nosotros.scss";
+@import "equipo.scss";
+@import "mixins.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-size: 16px;
+}
+
+.navbar-brand {
+  font-size: 1rem;
+  .icono_empresa:hover {
+    animation: rotation 2s infinite linear;
+  }
+  .icono_empresa {
+    width: 12%;
+  }
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+.titulo_pagina {
+  font-weight: bolder;
+  font-family: $ft-titulo;
+  color: white;
+  text-transform: uppercase;
+  @include media-max(xs) {
+    font-size: $fs-titulo-xs !important;
+  }
+
+  @include media-max(sm) {
+    font-size: $fs-titulo-sm;
+  }
+
+  @include media-min(md) {
+    font-size: $fs-titulo-md;
+  }
+
+  @include media-min(lg) {
+    font-size: $fs-titulo-lg;
+  }
+  @include media-min(xl) {
+    font-size: $fs-titulo-xl;
+  }
+}
+
+.subtitulo_pagina {
+  color: white;
+  font-weight: bolder;
+
+  @include media-max(sm) {
+    font-size: $fs-subtitulo-sm;
+  }
+
+  @include media-min(md) {
+    font-size: $fs-subtitulo-md;
+  }
+
+  @include media-min(lg) {
+    font-size: $fs-subtitulo-lg;
+  }
+  @include media-min(xl) {
+    font-size: $fs-subtitulo-xl;
+  }
+}
+
+.texto__presentacion {
+  text-align: justify;
+
+  @include media-min(md) {
+    font-size: $fs-presentacion-md;
+  }
+
+  @include media-min(lg) {
+    font-size: $fs-presentacion-lg;
+  }
+}
+
+.titulo_contenido_ppal {
+  h2 {
+    @include media-min(md) {
+      font-size: $fs-tcontPpal-md;
+    }
+    @include media-min(lg) {
+      font-size: $fs-tcontPpal-lg;
+    }
+  }
+  p {
+    @include media-min(sm) {
+      font-size: $fs-stcontPpal-md;
+    }
+    @include media-min(md) {
+      font-size: $fs-stcontPpal-md;
+    }
+    @include media-min(lg) {
+      font-size: $fs-stcontPpal-lg;
+    }
+  }
+}
+
+.titulo_contenido_ppal--justificado{
+  @extend .titulo_contenido_ppal;
+  p{
+    text-align: justify;
+  }
+}
+
+/*pagina NOSOTROS - EX TECNOLOGIA*/
+.item_ppal {
+  line-height: 1.75rem;
+  margin-bottom: 0.25rem;
+  font-weight: 900;
+
+  @include media-max(sm) {
+    font-size: $fs-itemPpal-sm;
+  }
+
+  @include media-min(md) {
+    font-size: $fs-itemPpal-md;
+  }
+
+  @include media-min(lg) {
+    font-size: $fs-itemPpal-lg;
+  }
+  @include media-min(xl) {
+    font-size: $fs-itemPpal-xl;
+  }
+}
+
+.cuerpo__tarjeta--index {
+  text-align: justify;
+}
+
+
+.bordes__glow {
+  border: 0.2rem solid #fff;
+  border-radius: 2rem;
+  padding: 0.4em;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #103af5a4,
+    0 0 0.8rem #103af5a4, 0 0 2.8rem #103af5a4, inset 0 0 1.3rem #103af5a4;
+}
+
+.icon {
+  cursor: pointer;
+  border-radius: 15px;
+  transition: all 0.4s;
+}
+
+.icon:nth-child(1):hover {
+  box-shadow: 0px 0px 10px #9ac4f8;
+}
+.icon:nth-child(2):hover {
+  box-shadow: 0px 0px 10px #04f06a;
+}
+.icon:nth-child(3):hover {
+  box-shadow: 0px 0px 10px #096ce6;
+}
+.icon:nth-child(4):hover {
+  box-shadow: 0px 0px 10px #f5f10c;
+}
+
+.glow_icon_what {
+  color: #04f06a;
+  filter: drop-shadow(0px 0px 10px #04f06a);
+}
+
+.glow_icon_twit {
+  color: #9ac4f8;
+  filter: drop-shadow(0px 0px 10px #9ac4f8);
+}
+
+.glow_icon_link {
+  color: #096ce6;
+  filter: drop-shadow(0px 0px 10px #096ce6);
+}
+
+.glow_icon_git {
+  color: #f5f10c;
+  filter: drop-shadow(0px 0px 10px #f5f10c);
+}
+

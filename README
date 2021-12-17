@@ -26,3 +26,25 @@ Cambios Desafio SASS I
 7 - Se agregaron los @media para pagina index y equipo.
 8 - Se agrego efecto glow y box-shadow a los iconos de redes sociales en el footer.
 9 - Se elimino el archivo de estilos css original.
+
+
+Cambios Desafio SASS II
+1 - Se eliminaron estilos que no se usaban.
+2 - se generaron 2 mixin's para el maneje de los media query.
+3 - se genero un mapa como parametro para los mixin's de media query
+4 - Se genero un mixin con parametros para especificar el color de los border en una animacion.
+5 - Se uso @extender para herencia de configuracion de texto.
+6 - Se renembro la pagina tecnologia.html a nosotros.html
+7 - Se reemplazaron los @import de fonts por @font-face
+
+DISPOSITIVOS UTILIZADOS PARA PROBAR RESPONSIVE
+1 - Generic Laptop 1280 x 950
+2 - iPad Pro 1024 x 1366
+3 - iPad 768 x 1024
+4 - Surface Duo 540 x 720
+5 - Moto G4 360 x 640
+6 - Galaxy Fold 280 x 653
+
+PROBLEMAS DETECTADO
+1 - El footer no se queda en el bottom de la pagina contactos.html SOLO EN IPAD Pro (1024 x 1366)
+2 - El footer no se queda en el bottom de la pagina proyectos.html SOLO EN IPAD Pro (1024 x 1366)

@@ -1,8 +1,28 @@
-@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Kaushan+Script&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap");
-/*font-family: 'Bakbak One', cursive;*/
+@font-face {
+  font-family: "robotoblack";
+  src: url("roboto-black-webfont.woff2") format("woff2"), url("roboto-black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "robotomedium";
+  src: url("roboto-medium-webfont.woff2") format("woff2"), url("roboto-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "robotoregular";
+  src: url("roboto-regular-webfont.woff2") format("woff2"), url("roboto-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "robotobold";
+  src: url("roboto-bold-webfont.woff2") format("woff2"), url("roboto-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 .fondo__cortado {
   background-image: url("../assets/images/fondo_index.webp");
   background-repeat: no-repeat;
@@ -68,25 +88,8 @@ img .rotar:hover {
   animation: rotation 2s infinite linear;
 }
 
-.titulo__parallax {
-  padding-top: 15%;
-}
-
-.parrafo__parallax-tecnologia {
-  line-height: 2.5rem;
-  font-size: 1.2rem;
-  font-style: italic;
-}
-
 .fondo_tecno {
   background-color: #D9E2DE;
-}
-
-.item_ppal {
-  font-size: 2em;
-  line-height: 1.75rem;
-  margin-bottom: 0.25rem;
-  font-weight: 900;
 }
 
 .item_detalle {
@@ -135,13 +138,21 @@ img .rotar:hover {
     width: 100%;
   }
 }
+/*mapa de medidas de pantallas para los media query*/
+/*****************************************************/
+/*Definicion de los mixin's que usaremos para ajustar los elementos a una resolucion de pantalla MINIMA*/
+/********************************************************************************************/
+/*Definicion de los mixin's que usaremos para ajustar los elementos a una resolucion de pantalla MAXIMA*/
+/********************************************************************************************/
+/*Definicion de mixin para el efecto de los bordes de colores y animados de integrantes de equipo*/
+/***************************************************************************************************/
 .tarjeta__equipo {
   box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
   padding: 25px;
   transition: all 0.35s ease;
 }
-.tarjeta__equipo .tarjeta__equipo:hover {
+.tarjeta__equipo:hover {
   box-shadow: none;
   transform: translateY(5px);
 }
@@ -151,10 +162,6 @@ img .rotar:hover {
   height: 125px;
   border-radius: 100px;
 }
-.miembro_equipo p {
-  text-align: center;
-}
-
 .miembro_equipo img:hover {
   transition: ease-in-out 1s;
   border-radius: 50%;
@@ -165,8 +172,10 @@ img .rotar:hover {
   filter: sepia(60%);
   transform: scale(1.8);
 }
+.miembro_equipo p {
+  text-align: center;
+}
 
-/*Animacion sobre los indicadores de disponibilidad en pagina equipo*/
 .div_animado_verde {
   width: 100%;
   height: 4px;
@@ -174,23 +183,6 @@ img .rotar:hover {
   transition: width 3s;
   animation: estado_disponibilidad 3s;
 }
-
-.div_animado_amarillo {
-  width: 100%;
-  height: 4px;
-  background: #ffc107;
-  transition: width 3s;
-  animation: estado_disponibilidad 3s;
-}
-
-.div_animado_rojo {
-  width: 100%;
-  height: 4px;
-  background: #dc3545;
-  transition: width 3s;
-  animation: estado_disponibilidad 3s;
-}
-
 @keyframes estado_disponibilidad {
   0% {
     width: 0%;
@@ -212,6 +204,65 @@ img .rotar:hover {
     color: black;
   }
 }
+
+.div_animado_amarillo {
+  width: 100%;
+  height: 4px;
+  background: #ffc107;
+  transition: width 3s;
+  animation: estado_disponibilidad 3s;
+}
+@keyframes estado_disponibilidad {
+  0% {
+    width: 0%;
+  }
+  20% {
+    width: 20%;
+  }
+  40% {
+    width: 40%;
+  }
+  60% {
+    width: 60%;
+  }
+  80% {
+    width: 80%;
+  }
+  100% {
+    width: 100%;
+    color: black;
+  }
+}
+
+.div_animado_rojo {
+  width: 100%;
+  height: 4px;
+  background: #dc3545;
+  transition: width 3s;
+  animation: estado_disponibilidad 3s;
+}
+@keyframes estado_disponibilidad {
+  0% {
+    width: 0%;
+  }
+  20% {
+    width: 20%;
+  }
+  40% {
+    width: 40%;
+  }
+  60% {
+    width: 60%;
+  }
+  80% {
+    width: 80%;
+  }
+  100% {
+    width: 100%;
+    color: black;
+  }
+}
+
 /*************************************************/
 /*efecto glow boton unirte al equipo - pagina equipos*/
 .glow-on-hover {
@@ -263,6 +314,14 @@ img .rotar:hover {
   border-radius: 10px;
 }
 
+/*mapa de medidas de pantallas para los media query*/
+/*****************************************************/
+/*Definicion de los mixin's que usaremos para ajustar los elementos a una resolucion de pantalla MINIMA*/
+/********************************************************************************************/
+/*Definicion de los mixin's que usaremos para ajustar los elementos a una resolucion de pantalla MAXIMA*/
+/********************************************************************************************/
+/*Definicion de mixin para el efecto de los bordes de colores y animados de integrantes de equipo*/
+/***************************************************************************************************/
 * {
   margin: 0;
   padding: 0;
@@ -271,6 +330,7 @@ img .rotar:hover {
 
 body {
   height: 100vh;
+  font-size: 16px;
 }
 
 .navbar-brand {
@@ -292,16 +352,135 @@ ul {
 }
 
 .titulo_pagina {
-  font-family: "Bakbak One, cursive";
-  font-size: 2.8em;
+  font-weight: bolder;
+  font-family: "robotobold";
+  color: white;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 320px) {
+  .titulo_pagina {
+    font-size: 1.3em !important;
+  }
+}
+@media screen and (max-width: 540px) {
+  .titulo_pagina {
+    font-size: 2.3em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .titulo_pagina {
+    font-size: 2.5em;
+  }
+}
+@media screen and (min-width: 992px) {
+  .titulo_pagina {
+    font-size: 3em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .titulo_pagina {
+    font-size: 3.5em;
+  }
+}
+
+.subtitulo_pagina {
+  color: white;
+  font-weight: bolder;
+}
+@media screen and (max-width: 540px) {
+  .subtitulo_pagina {
+    font-size: 1.3em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .subtitulo_pagina {
+    font-size: 1.8em;
+  }
+}
+@media screen and (min-width: 992px) {
+  .subtitulo_pagina {
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subtitulo_pagina {
+    font-size: 2.3em;
+  }
+}
+
+.texto__presentacion {
+  text-align: justify;
+}
+@media screen and (min-width: 768px) {
+  .texto__presentacion {
+    font-size: 1.3em;
+  }
+}
+@media screen and (min-width: 992px) {
+  .texto__presentacion {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .titulo_contenido_ppal h2, .titulo_contenido_ppal--justificado h2 {
+    font-size: 1.8em;
+  }
+}
+@media screen and (min-width: 992px) {
+  .titulo_contenido_ppal h2, .titulo_contenido_ppal--justificado h2 {
+    font-size: 2.5em;
+  }
+}
+@media screen and (min-width: 540px) {
+  .titulo_contenido_ppal p, .titulo_contenido_ppal--justificado p {
+    font-size: 1.4em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .titulo_contenido_ppal p, .titulo_contenido_ppal--justificado p {
+    font-size: 1.4em;
+  }
+}
+@media screen and (min-width: 992px) {
+  .titulo_contenido_ppal p, .titulo_contenido_ppal--justificado p {
+    font-size: 1.8em;
+  }
+}
+
+.titulo_contenido_ppal--justificado p {
+  text-align: justify;
+}
+
+/*pagina NOSOTROS - EX TECNOLOGIA*/
+.item_ppal {
+  line-height: 1.75rem;
+  margin-bottom: 0.25rem;
+  font-weight: 900;
+}
+@media screen and (max-width: 540px) {
+  .item_ppal {
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .item_ppal {
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 992px) {
+  .item_ppal {
+    font-size: 2.4em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .item_ppal {
+    font-size: 2.5em;
+  }
 }
 
 .cuerpo__tarjeta--index {
   text-align: justify;
-}
-
-.titulo__parallax {
-  text-transform: uppercase;
 }
 
 .bordes__glow {
@@ -353,199 +532,4 @@ ul {
   filter: drop-shadow(0px 0px 10px #f5f10c);
 }
 
-/*extra-small*/
-@media screen and (max-width: 575px) {
-  .titulo_pagina {
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: gray;
-    color: white;
-    font-family: "Arial Black";
-    text-transform: uppercase;
-    font-size: 1.5em;
-    text-align: center;
-  }
-
-  .subtitulo_pagina {
-    font-size: 1em;
-    text-align: center;
-    font-weight: bolder;
-  }
-
-  .texto__presentacion p {
-    font-size: 0.9em;
-    text-align: justify;
-  }
-
-  .titulo_contenido_ppal h2 {
-    font-size: 1em;
-    font-weight: bold;
-  }
-  .titulo_contenido_ppal p {
-    font-size: 0.9em;
-    text-align: center;
-  }
-
-  .tarjeta_index h5 {
-    font-size: 1em;
-    text-align: center;
-    font-weight: bold;
-  }
-  .tarjeta_index p {
-    font-size: 0.9em;
-    text-align: justify;
-    font-weight: lighter;
-  }
-  .tarjeta_index a {
-    font-size: 0.8em;
-  }
-
-  .titulo__parallax {
-    padding-top: 5%;
-    margin: 0;
-  }
-  .titulo__parallax h1 {
-    font-size: 1.2em;
-    color: #ffff !important;
-  }
-
-  .parrafo__parallax-tecnologia {
-    font-size: 0.9em;
-    text-align: justify;
-    color: white;
-    font-weight: bolder;
-    margin: 0;
-    opacity: 80%;
-  }
-
-  .iconos_tecnologia {
-    justify-content: space-around;
-  }
-  .iconos_tecnologia img {
-    width: 2.5em;
-  }
-
-  .item_ppal {
-    font-size: 1.2em;
-    line-height: 1.75rem;
-    margin-bottom: 0.25rem;
-    font-weight: 900;
-  }
-
-  .item_detalle {
-    margin-bottom: 1rem;
-    line-height: 2.7em;
-    font-size: 0.8em;
-    font-weight: 500;
-    text-align: justify;
-  }
-}
-/*small*/
-@media screen and (min-width: 576px) {
-  .titulo_pagina {
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: gray;
-    color: white;
-    font-family: "Arial Black";
-    text-transform: uppercase;
-    font-size: 2.2em;
-  }
-
-  .texto__presentacion {
-    font-size: 1.1em;
-    text-align: justify !important;
-  }
-}
-/*medium*/
-@media screen and (min-width: 768px) {
-  .titulo_pagina {
-    font-size: 2.5em;
-  }
-
-  .subtitulo_pagina {
-    font-weight: bold;
-  }
-
-  .texto__presentacion p {
-    text-align: justify;
-  }
-}
-/*large*/
-@media screen and (min-width: 992px) {
-  .titulo_pagina {
-    font-size: 2.8em;
-  }
-
-  .subtitulo_pagina {
-    background: #000;
-    font-weight: bold;
-    text-align: center !important;
-  }
-
-  h5 {
-    font-size: 1em;
-    text-align: center;
-    font-weight: bold;
-  }
-
-  p {
-    font-size: 0.9em;
-    text-align: justify !important;
-    font-weight: lighter;
-  }
-
-  /*extra large*/
-  /*extra extra large*/
-}
-@media screen and (min-width: 992px) and (min-width: 1200px) {
-  .titulo_pagina {
-    font-size: 3.1em;
-    text-align: center;
-  }
-
-  .subtitulo_pagina {
-    text-align: center;
-  }
-
-  .tarjeta_index h5 {
-    font-size: 1.4em;
-    text-align: center;
-    font-weight: bold;
-  }
-  .tarjeta_index p {
-    font-size: 1.1em;
-    text-align: justify;
-    font-weight: lighter;
-  }
-  .tarjeta_index a {
-    font-size: 0.8em;
-  }
-}
-@media screen and (min-width: 992px) and (min-width: 1400px) {
-  .titulo_pagina {
-    font-size: 3.1em;
-  }
-
-  .subtitulo_pagina {
-    font-size: 2em;
-  }
-
-  .texto__presentacion {
-    font-size: 1.7em;
-  }
-
-  .tarjeta_index h5 {
-    font-size: 1.4em;
-    text-align: center;
-    font-weight: bold;
-  }
-  .tarjeta_index p {
-    font-size: 1.1em;
-    text-align: justify;
-    font-weight: lighter;
-  }
-  .tarjeta_index a {
-    font-size: 0.8em;
-  }
-}
-
-/*# sourceMappingURL=estilo2.css.map */
+/*# sourceMappingURL=estilo3.css.map */

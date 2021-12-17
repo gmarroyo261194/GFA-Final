@@ -1,29 +1,70 @@
-@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Kaushan+Script&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
-/*font-family: 'Bakbak One', cursive;*/
+@font-face {
+    font-family: 'robotoblack';
+    src: url('roboto-black-webfont.woff2') format('woff2'),
+         url('roboto-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
-$ft-titulo: "Bakbak One, cursive";
-$fs-titulo-xl: 3.1em;
-$fs-titulo-lg: 2.8em;
+@font-face {
+    font-family: 'robotomedium';
+    src: url('roboto-medium-webfont.woff2') format('woff2'),
+         url('roboto-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('roboto-regular-webfont.woff2') format('woff2'),
+         url('roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('roboto-bold-webfont.woff2') format('woff2'),
+         url('roboto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+$ft-titulo: "robotobold";
+$ft-subtitulo: "robotoregular";
+$fs-titulo-xl: 3.5em;
+$fs-titulo-lg: 3em;
 $fs-titulo-md: 2.5em;
-$fs-titulo-sm: 2.2em;
-$fs-titulo-xs: 1.5em;
+$fs-titulo-sm: 2.3em;
+$fs-titulo-xs: 1.3em;
 
-$fs-subtitulo-xs: 1em;
-$fs-subtitulo-md: 1.4em;
-$fs-subtitulo-xl: 2em;
+$fs-subtitulo-sm: 1.3em;
+$fs-subtitulo-md: 1.8em;
+$fs-subtitulo-lg: 2em;
+$fs-subtitulo-xl: 2.3em;
 
 $fs-presentacion-xl: 1.7em;
 $fs-presentacion-lg: 1.5em;
-$fs-presentacion-md: 1.1em;
-$fs-presentacion-sm: .9em;
-$fs-presentacion-xs: .9em;
+$fs-presentacion-md: 1.3em;
 
-$fs-itemPpal-xl: 2em;
+$fs-tcontPpal-xs:.9em;
+$fs-tcontPpal-sm:.9em;
+$fs-tcontPpal-md: 1.8em;
+$fs-tcontPpal-lg: 2.5em;
+$fs-tcontPpal-xl:.9em;
+
+$fs-stcontPpal-md: 1.4em;
+$fs-stcontPpal-lg: 1.8em;
+
 $fs-itemPpal-sm: 1.2em;
+$fs-itemPpal-md: 2em;
+$fs-itemPpal-lg: 2.4em;
+$fs-itemPpal-xl: 2.5em;
+
 
 $fs-detalle-xl: 1.1em;
 $fs-detalle-lg: 1em;
