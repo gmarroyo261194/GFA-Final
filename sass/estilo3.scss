@@ -18,13 +18,16 @@ body {
 
 .navbar-brand {
   font-size: 1rem;
-  .icono_empresa:hover {
-    animation: rotation 2s infinite linear;
-  }
   .icono_empresa {
     width: 12%;
     height: auto;
+
+    &:hover {
+      animation: rotation 2s infinite linear;
+    }
   }
+  
+  
 }
 a {
   text-decoration: none;
