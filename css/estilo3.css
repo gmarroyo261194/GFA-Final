@@ -341,6 +341,7 @@ body {
 }
 .navbar-brand .icono_empresa {
   width: 12%;
+  height: auto;
 }
 
 a {
