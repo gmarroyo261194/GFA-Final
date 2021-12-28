@@ -47,6 +47,9 @@ DISPOSITIVOS UTILIZADOS PARA PROBAR RESPONSIVE
 5 - Moto G4 360 x 640
 6 - Galaxy Fold 280 x 653
 
-PROBLEMAS DETECTADO
-1 - El footer no se queda en el bottom de la pagina contactos.html SOLO EN IPAD Pro (1024 x 1366)
-2 - El footer no se queda en el bottom de la pagina proyectos.html SOLO EN IPAD Pro (1024 x 1366)
+CAMBIOS EN 3RA ENTREGA DEL PROYECTO FINAL
+1 - Se cambiaron imagenes jpg por webp (mejoro performance del 42 al 98 en lighthouse).
+2 - Se cambiaraon los meta description en las paginas (era el msimo en todas en la entrega pasada).
+3- Se registro el dominio wwww.gfafreelance.com.ar (mediante tramites a distancia)
+3 - Se publico el sitio en el hosting netlify.
+4 - Se delego el dominio www.gfafreelance.com.ar a los DNS de netlify.
