@@ -61,20 +61,21 @@
       <div class="row justify-content-center my-3">
         <!--INICIO FORMULARIO CONTACTO-->
         <div class="col-lg-6">
-          <form>
+          <form action="https://formspree.io/f/mgedvonp"
+          method="POST">
             <label for="nombre" class="form-label text-black">Nombre:</label>
             <div class="mb-4 input-group">
               <span class="input-group-text">
                 <i class="bi bi-person"></i>
               </span>
-              <input type="text" class="form-control" id="nombre" placeholder="tu nombre">
+              <input type="text" class="form-control" id="nombre" name="fullname" placeholder="tu nombre">
             </div>
             <label for="email" class="form-label text-black">Correo Electronico:</label>
             <div class="mb-4 input-group">
               <span class="input-group-text">
                 <i class="bi bi-at"></i>
               </span>
-              <input type="email" class="form-control" id="email" placeholder="tu correo electronico">
+              <input type="email" class="form-control" id="email" name="_replyto" placeholder="tu correo electronico">
             </div>
             <label for="tipo" class="form-label text-black">Tipo de Consulta</label>
             <div class="mb-4 input-group">
@@ -88,7 +89,7 @@
               </select>
             </div>
             <div class="form-floating mb-4 mt-2">
-              <textarea name="" id="consulta" class="form-control h-auto"></textarea>
+              <textarea name="" id="consulta" name="message" class="form-control h-auto"></textarea>
               <label for="consulta">Tu Consulta...</label>
             </div>
             <div class="mb-4 text-center">
@@ -103,67 +104,71 @@
 </div>
   <!--FINAL CONTENIDO PPAL-->
   <!--INICIO FOOTER-->
-  <footer class="footer bg-dark text-white pt-4 pb-4">
+  <footer class="footer bg-dark text-white pt-5 pb-4">
     <div class="container text-center text-md-left">
-      <div class="row text-center text-md-left">
-        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 fw-bold text-warning fs-6">GFA Freelancer's</h5>
-          <p class="fs-6">Somos un grupo de freelancer con muchas ganas de trabajar, divertirse y seguir aprendiendo</p>
+        <div class="row text-center text-md-left">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 fw-bold text-warning fs-6">GFA Freelancer's</h5>
+                <p class="fs-6">Somos un grupo de freelancer con muchas ganas de trabajar, divertirse y seguir
+                    aprendiendo</p>
 
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-md-5 mt-3">
+                <h5 class="text-uppercase mb-4 fw-bold text-warning fs-6">Enlaces de Interes</h5>
+                <p>
+                    <a href="#" class="text-white fs-6">Quieres ser parte del equipo?</a>
+                </p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 fs-6 fw-bold text-warning">Contacto</h5>
+                <p class="fs-6">
+                    <i class="bi bi-house text-decoration-none"> Los Guindos 6997, Rodeo de la Cruz - Guaymallen -
+                        Mendoza,
+                        Argentina</i>
+                </p>
+                <p>
+                    <i class="bi bi-envelope"><a href="mailto:gmarroyo@yahoo.com"><span class="mx-3 text-white">gmarroyo@yahoo.com</span></a></i>
+                </p>
+                <p>
+                    <i class="bi bi-phone mr-3"><span class="mx-3">+54 261 5923 700</span></i>
+                </p>
+            </div>
         </div>
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-md-5 mt-3">
-          <h5 class="text-uppercase mb-4 fw-bold text-warning fs-6">Enlaces de Interes</h5>
-          <p>
-            <a href="#" class="text-white fs-6">Quieres ser parte del equipo?</a>
-          </p>
+        <hr class="mb-4">
+        <div class="row align-items-center">
+            <div class="col-md-7 col-lg-8">
+                <p>Copyright ©2021 Todos los derechos reservados por:
+                    <a href="#">
+                        <strong class="text-warning">GFA Freelancer's</strong>
+                    </a>
+                </p>
+            </div>
+            <div class="col-md-5 col-lg-4">
+                <div class="text-center text-md-start">
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item">
+                            <a href="https://twitter.com/?lang=es" target="_blank" class="btn-lg text-white icon"><i
+                                    class="bi bi-twitter glow_icon_twit"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://api.whatsapp.com/send?phone=+542615923700" target="_blank" class="btn-lg text-white icon"><i
+                                    class="bi bi-whatsapp glow_icon_what"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/in/guillermo-arroyo-4b86a599/" target="_blank" class="btn-lg text-white icon"><i
+                                    class="bi bi-linkedin glow_icon_link"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://github.com/gmarroyo261194" rel="noreferrer" target="_blank"
+                                class="btn-lg text-white icon"><i class="bi bi-github glow_icon_git"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 fs-6 fw-bold text-warning">Contacto</h5>
-          <p class="fs-6">
-            <i class="bi bi-house text-decoration-none"> Los Guindos 6997, Rodeo de la Cruz - Guaymallen -
-              Mendoza,
-              Argentina</i>
-          </p>
-          <p>
-            <i class="bi bi-envelope"><span class="mx-3">gmarroyo@yahoo.com</span></i>
-          </p>
-          <p>
-            <i class="bi bi-phone mr-3"><span class="mx-3">+54 261 5923 700</span></i>
-          </p>
-        </div>
-      </div>
-      <hr class="mb-4">
-      <div class="row align-items-center">
-        <div class="col-md-7 col-lg-8">
-          <p>Copyright ©2021 Todos los derechos reservados por:
-            <a href="#">
-              <strong class="text-warning">GFA Freelancer's</strong>
-            </a>
-          </p>
-        </div>
-        <div class="col-md-5 col-lg-4">
-          <div class="text-center text-md-start">
-            <ul class="list-unstyled list-inline">
-              <li class="list-inline-item">
-                <a href="#" class="btn-lg text-white icon"><i class="bi bi-twitter glow_icon_twit"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="btn-lg text-white icon"><i class="bi bi-whatsapp glow_icon_what"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="btn-lg text-white icon"><i class="bi bi-linkedin glow_icon_link"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://github.com/gmarroyo261194" rel="noreferrer" target="_blank"
-                  class="btn-lg text-white icon"><i class="bi bi-github glow_icon_git"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
     </div>
-  </footer>
-  <!--FINAL FOOTER-->
+</footer>
+<!--FINAL FOOTER-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
